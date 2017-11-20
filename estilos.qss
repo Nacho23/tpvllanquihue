@@ -1,0 +1,81 @@
+QDialog#Dialog {
+    border-image: url(imagenes/fondo.jpg);
+}
+
+QMainWindow {
+    border-image: url(imagenes/fondo.jpg);
+}
+
+
+QTableWidget{
+	background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: black;
+    font: 24px "Calibri";
+    color: black(dark);
+    padding: 6px;
+}
+
+QDateEdit{
+	background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: black;
+    font: bold 24px "Calibri";
+    color: black(dark);
+    padding: 6px;
+}
+
+QLineEdit{
+	background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: black;
+    font: bold 24px "Calibri";
+    color: black(dark);
+    padding: 6px;
+}
+
+QComboBox{
+    background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: black;
+    font: bold 24px "Calibri";
+    color: black(dark);
+    padding: 6px;
+}
+
+
+QPushButton {
+    background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: black;
+    font: bold 24px "Calibri";
+    color: black(dark);
+    padding: 6px;
+}
+QPushButton:disabled {
+    background-color: white;
+    border-style: inset;
+    color: gray;
+}
+QPushButton:checked{
+    background-color: #4a46a4;
+    border-style: inset;
+}
+QPushButton:hover{
+    background-color: lightblue;
+}
+QPushButton:pressed{
+    background-color: #3333ff;
+    border-style: inset;
+    color: white;
+}

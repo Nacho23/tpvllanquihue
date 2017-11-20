@@ -1,0 +1,9 @@
+Registra ventas
+control de inventario
+consultas (informes) divididas por proveedor
+total ganancia ventas (registro en pantalla)
+
+sesiones
+
+* al modificar inventario dejar registro de por que fue (descripcion)
+* alertas (bajo stock (min 10))

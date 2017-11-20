@@ -1,0 +1,6 @@
+*modificar buscador de inventario, que busque además por descripcion y codigo
+*arreglar el cambio de columnas en las consultas de la base de datos, al modificar algun producto
+
+colores negro y amarillo
+
+Averiguar el tema de boleta electronica
