@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'formulario.ui'
 #
-# Created: Thu Oct 26 14:27:13 2017
+# Created: Sun Dec 17 22:39:40 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -64,6 +64,7 @@ class Ui_Dialog(object):
         font.setFamily("Calibri")
         font.setPointSize(12)
         self.sb_cantidad_inventario.setFont(font)
+        self.sb_cantidad_inventario.setMaximum(1000)
         self.sb_cantidad_inventario.setObjectName("sb_cantidad_inventario")
         self.formLayout.setWidget(1, QtGui.QFormLayout.FieldRole, self.sb_cantidad_inventario)
         self.verticalLayout.addLayout(self.formLayout)
@@ -72,6 +73,7 @@ class Ui_Dialog(object):
         font.setFamily("Calibri")
         font.setPointSize(12)
         self.le_codigo.setFont(font)
+        self.le_codigo.setReadOnly(False)
         self.le_codigo.setObjectName("le_codigo")
         self.verticalLayout.addWidget(self.le_codigo)
         self.btn_aceptar = QtGui.QPushButton(Form)

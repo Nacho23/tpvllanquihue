@@ -39,3 +39,13 @@ def modificar_clave(rut, clave):
 	conect.commit()
 	conn.close()
 
+def registrarIngreso(rut, fecha):
+	print(rut + " " + fecha)
+	conexion = Conexion()
+	conect = conexion.conectarBD()
+	conn = conect.cursor()
+	query = "INSERT INTO ingreso(rut, fecha) VALUES (?, ?)"
+	conn.execute(query, (rut, fecha))
+	conect.commit()
+	conn.close()
+

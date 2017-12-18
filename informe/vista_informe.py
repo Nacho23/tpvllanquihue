@@ -92,6 +92,9 @@ class Informe(QtGui.QDialog):
 		else:
 			c.drawString(100, eje_y-70, "Total Ganancias: " + str(total_venta*0.2))
 
+		fecha_generado = (QtCore.QDateTime.currentDateTime()).toString("dd-MM-yy hh:mm:ss")
+		c.drawString(100, eje_y-100, "Fecha de generacion de informe: " + fecha_generado)
+
 		c.save()
 		self.datos_informe = []
 

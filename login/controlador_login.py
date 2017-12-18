@@ -15,6 +15,7 @@ from random import choice
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import time
 
 def buscaTrabajador(self, rut, contrasena):
 	rut_valido = validaRut(rut)
@@ -164,6 +165,11 @@ def encriptar_clave(clave):
 	crypt = c.CryptoRAF()
 	clave_encriptada = crypt.encrypt(clave, "asdlkjqweiou12308zmxncbdjdjdal")
 	return clave_encriptada
+
+def registrarIngreso(rut):
+	fecha = time.strftime('%y-%m-%d')
+	modelo_login.registrarIngreso(rut, fecha)
+
 
 def errorMessage(self, message):
 	"""Función que despliega un mensaje de error.

@@ -1,13 +1,13 @@
 QDialog#Dialog {
-    border-image: url(imagenes/fondo.jpg);
+    border-image: url(Documentos/imagenes/fondoDos.jpg);
 }
 
 QMainWindow {
-    border-image: url(imagenes/fondo.jpg);
+    border-image: url(Documentos/imagenes/pruebaFondo.jpg);
 }
 
 
-QTableWidget{
+/*QTableWidget{
 	background-color: white;
     border-style: outset;
     border-width: 2px;
@@ -17,7 +17,7 @@ QTableWidget{
     color: black(dark);
     padding: 6px;
 }
-
+*/
 QDateEdit{
 	background-color: white;
     border-style: outset;
@@ -51,6 +51,15 @@ QComboBox{
     padding: 6px;
 }
 
+QLabel#label {
+    color: rgb(210, 205, 58);
+    font: bold 37px "Calibri";
+}
+
+QLabel#lb_precio_total {
+    color: rgb(210, 205, 58);
+    font: bold 70px "Calibri";
+}
 
 QPushButton {
     background-color: white;

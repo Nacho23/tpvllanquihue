@@ -128,8 +128,8 @@ class Inventario(QtGui.QDialog):
 			row = [QtGui.QTableWidgetItem(str(data[0])),
 			QtGui.QTableWidgetItem(data[1]),
 			QtGui.QTableWidgetItem(data[2]),
-			QtGui.QTableWidgetItem(data[3]),
 			QtGui.QTableWidgetItem(data[4]),
+			QtGui.QTableWidgetItem(data[3]),
 			QtGui.QTableWidgetItem(str(data[5])),
 			QtGui.QTableWidgetItem(str(stock[0][0]))]
 			for j, cell in enumerate(row):

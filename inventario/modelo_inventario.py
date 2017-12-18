@@ -42,7 +42,7 @@ def buscarProductos(entrada):
 	conexion = Conexion()
 	conect = conexion.conectarBD()
 	conn = conect.cursor()
-	query = "SELECT * FROM producto WHERE descripcion LIKE ? OR codigo LIKE ? OR proveedor LIKE ? AND estado = 1"
+	query = "SELECT * FROM producto WHERE (descripcion LIKE ? OR codigo LIKE ? OR proveedor LIKE ?) AND estado = 1"
 	conn.execute(query, (entrada, entrada, entrada))
 	resultado = conn.fetchall()
 	conn.close()

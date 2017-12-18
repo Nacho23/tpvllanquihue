@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'inventario.ui'
 #
-# Created: Sat Sep 30 13:09:43 2017
+# Created: Thu Dec 07 12:25:27 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,7 +12,7 @@ from PySide import QtCore, QtGui
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1800, 900)
+        Dialog.resize(1600, 900)
         self.verticalLayout = QtGui.QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout = QtGui.QHBoxLayout()
@@ -67,6 +67,11 @@ class Ui_Dialog(object):
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+        Dialog.setTabOrder(self.btn_agregar, self.btn_editar)
+        Dialog.setTabOrder(self.btn_editar, self.btn_descontinuar)
+        Dialog.setTabOrder(self.btn_descontinuar, self.le_buscar)
+        Dialog.setTabOrder(self.le_buscar, self.btn_buscar)
+        Dialog.setTabOrder(self.btn_buscar, self.tw_inventario)
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(QtGui.QApplication.translate("Dialog", "Invetario", None, QtGui.QApplication.UnicodeUTF8))
@@ -74,4 +79,5 @@ class Ui_Dialog(object):
         self.btn_editar.setText(QtGui.QApplication.translate("Dialog", "Editar", None, QtGui.QApplication.UnicodeUTF8))
         self.btn_descontinuar.setText(QtGui.QApplication.translate("Dialog", "Descontinuar", None, QtGui.QApplication.UnicodeUTF8))
         self.btn_buscar.setText(QtGui.QApplication.translate("Dialog", "Buscar", None, QtGui.QApplication.UnicodeUTF8))
+        self.btn_buscar.setShortcut(QtGui.QApplication.translate("Dialog", "Return", None, QtGui.QApplication.UnicodeUTF8))
 

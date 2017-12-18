@@ -102,6 +102,9 @@
          <pointsize>12</pointsize>
         </font>
        </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
       </widget>
      </item>
     </layout>
@@ -113,6 +116,9 @@
        <family>Calibri</family>
        <pointsize>12</pointsize>
       </font>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
      </property>
      <property name="placeholderText">
       <string>Código</string>

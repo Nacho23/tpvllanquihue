@@ -43,6 +43,7 @@ class Login(QtGui.QDialog):
 			else:
 				if(len(resultado) > 0):
 					if(self.notificacion == True):
+						controlador_login.registrarIngreso(input_usuario)
 						self.menu = Menu(resultado[0])
 						self.menu.show()
 						self.close()
@@ -50,6 +51,7 @@ class Login(QtGui.QDialog):
 						self.recordar_contrasena.exec_()
 						self.notificacion = False
 					else:
+						controlador_login.registrarIngreso(input_usuario)
 						self.menu = Menu(resultado[0])
 						self.menu.show()
 						self.close()

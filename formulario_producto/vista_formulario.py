@@ -29,6 +29,7 @@ class Formulario(QtGui.QDialog):
 		if(self.accion == "editar"):
 			producto = controlador_formulario.buscaProductoPorCodigo(self, self.id)
 			self.ui.le_codigo.setText(unicode(str(producto[0][0])))
+			self.ui.le_codigo.setReadOnly(True)
 			self.ui.le_descripcion.setText(unicode(producto[0][1]))
 			self.ui.le_categoria.setText(unicode(producto[0][2]))
 			self.ui.le_proveedor.setText(unicode(producto[0][4]))

@@ -133,7 +133,7 @@ class Menu(QtGui.QMainWindow):
 				indice = self.encontrar_sublista(self.productos, producto[0])
 				print(indice)
 				self.productos.pop(indice[0])
-
+				print(self.productos)
 				self.actualiza_tabla()
 			else:
 				return False
@@ -216,8 +216,11 @@ class Menu(QtGui.QMainWindow):
 				controlador_menu.errorMessage(self, "No hay mas stock")
 
 	def disminuir_cantidad(self):
-		producto = list(controlador_menu.buscarProductoPorCodigo(self.id)[0])
-		indice_producto = self.encontrar_sublista(self.productos,producto[0])[0]
+		arreglo_producto = controlador_menu.buscarProductoPorCodigo(self.id)
+		producto = list(arreglo_producto[0])
+		print(producto[0])
+		print(self.productos)
+		indice_producto = self.encontrar_sublista(self.productos, producto[0])[0]
 		self.productos[indice_producto][6] -= 1 
 		self.actualiza_tabla()
 		
